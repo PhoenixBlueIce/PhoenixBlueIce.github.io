@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Here is my page.">
+    <meta name="keywords" content="html, css, 網頁, JS, javascript">
+    <!-- bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- 引用自己的css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/a467c5dc5e.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <title>「金爐之家」首頁</title>
+</head>
+<body>
+<!-- header框架-->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index"><img src="img/logo.jpg" alt="logo" width="145"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">主頁</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" target="_blank" onclick="return goMeme(event)">最新梗圖</a>
+                            <!-- <a class="nav-link" href="https://www.google.com" target="_blank" onclick="return goMeme(event)">最新梗圖</a> -->
+                            <!-- 未來可能會用<a class="nav-link meme-link" href="https://www.google.com" target="_blank">最新梗圖</a> -->
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">梗圖介紹</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="p001.html">章魚哥梗圖</a></li>
+                                    <li><a class="dropdown-item" href="p002.html">原神爆典</a></li>
+                                    <li><a class="dropdown-item" href="p003.html">鐵道爆典</a></li>
+                                    <!-- <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" onclick="return gofriendsite(event)">友站連結</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control rounded-0 rounded-start border border-end-0" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success rounded-0 rounded-end fa-solid fa-magnifying-glass px-3" type="submit"></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="intro" style="background: linear-gradient(45deg, rgba(0, 0, 0, 0.877), transparent) 20%, url(img/view.png) no-repeat center;background-size: cover;">
+        <div class="container">
+            <div class="col-12 col-md-6">
+                <h1 class="display-4 text-light fw-medium">異世相逢，盡享美味</h1>
+                <p class="lead text-light mt-3">抱歉合作已經結束。</p>
+                <a href="p004.html" class="btn rounded-2">了解更多</a>
+            </div>
+        </div>
+    </section>
+    <section id="second">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h3 class="text-center">作者簡介</h3>
+                    <div class="row justify-content-around align-items-center">
+                        <div class="col-md-5 self">
+                            <img src="img/self.png" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/logo.jpg" class="d-block mb-4" alt="logo" width="180">
+                            <p class="lead mb-5">「金爐之家」社群自 2023 年創立以來，足跡只在 Discord ，我們是環遊在提瓦特的旅行者。為萌新提供安全感的夥伴，讓您盡可能殺穿大世界，輾壓混沌回憶。</p>
+                            <ul id="auther_list">
+                                <li class="mb-3">2023 年金爐之家的創辦人之一 雷電いのり 設立「金爐之家」</li>
+                                <li class="my-3">榮獲 2023 年「須彌奧斯卡最佳男主角獎」</li>
+                                <li class="my-3">創立至今已獲得超過 4 億摩拉，鋤地 300 圈</li>
+                                <li class="my-3">足跡遍布提瓦特，超過 5 個國家</li>
+                                <li class="my-3">地方傳奇當小怪在打</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- 涉足地點 -->
+    <section id="latest">
+        <div class="container">
+            <div class="row text-center">
+                <h3>涉足地點</h3>
+                <div class="col-md-4 text-left">
+                    <div class="outer">
+                        <a href="#">
+                            <div class="upper">
+                                <img src="img/清泉鎮.png" alt="">
+                                <div class="innertext">
+                                    <span class="text-light fw-semibold">公益園遊會活動</span>
+                                </div>
+                            </div>   
+                        </a>
+                        <div class="lower">
+                            <h3>熟悉的蒙德：清泉鎮的獵人聚落</h3>
+                            <p><i class="fas fa-map-marker-alt me-2"></i>蒙德-清泉鎮</p>
+                            <p><i class="fa-regular fa-message"></i>義賣活動解決了鎮民的生活上的不便，也能夠增加城鎮的建設。希望之後也能繼續參加！</p>
+                            <button class="btn mt-3">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-left">
+                    <div class="outer">
+                        <a href="#">
+                            <div class="upper">
+                                <img src="img/流泉之眾.png" alt="">
+                                <div class="innertext">
+                                    <span class="text-light fw-semibold">天然的溫泉</span>
+                                </div>
+                            </div>   
+                        </a>
+                        <div class="lower">
+                            <h3>熱情的納塔：揭開六部族的神秘傳說</h3>
+                            <p><i class="fas fa-map-marker-alt me-2"></i>納塔-流泉之眾</p>
+                            <p><i class="fa-regular fa-message"></i>到流泉之眾泡天然的溫泉真是一大享受，下次還去納塔玩！</p>
+                            <button class="btn mt-3">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-left">
+                    <div class="outer">
+                        <a href="#">
+                            <div class="upper">
+                                <img src="img/電影節.png" alt="">
+                                <div class="innertext">
+                                    <span class="text-light fw-semibold">楓丹電影節</span>
+                                </div>
+                            </div>   
+                        </a>
+                        <div class="lower">
+                            <h3>水的國度楓丹：水下世界與機械科技並存的繁華城市</h3>
+                            <p><i class="fas fa-map-marker-alt me-2"></i>楓丹-楓丹廷</p>
+                            <p><i class="fa-regular fa-message"></i>想不到這部電影居然請到知名大導演協助，難怪會得獎！</p>
+                            <button class="btn mt-3">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- 訂閱email-->
+    <section id="email">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">                   
+                    <h3>訂閱金爐之家</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <p>訂閱金爐之家，隨時掌握最新最猛的角色培養訊息</p>
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="請輸入E-mail">
+                    </div>
+                    <a class="btn btn-primary btn-lg mt-4" href="#" role="button">訂閱</a>
+                </div>
+            </div>   
+        </div>
+    </section>
+<!-- 下面是footer-->
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+                <img src="img/logo.png" alt="" width="170">
+                <p>蠢貨眼裡聰明人都是瘋子，這是誇獎。<br>知識既為萬物尺度，定將窮盡真理、根除謬誤！</p>
+            </div>
+            <div class="col-md-4">
+               <h4>網站瀏覽</h4>
+              <ul>
+                <li><a href="index.html">回到首頁</a></li>
+                <li><a href="#">最新梗圖</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">關於金爐之家</a></li>
+                <li><a href="#">關於雷電いのり</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>聯絡我們</h4>
+                <p>7天內有效<br>
+                我們群組沒有電話<br>
+                E-mail：<a href="mailto:cvakm4a1@gmail.com">cvakm4a1@gmail.com</a>
+                </p>
+            </div>
+          </div>
+        </div>
+    </footer>
+<script src="js/header.js">
+</script>
+
+</body>
+</html>
+
+<!-- 設計藍圖
+首頁 index
+連結頁面 關於金爐之家、關於雷電いのり
+第一分支 章魚哥梗圖、原神爆典、鐵道爆典
+第二分支 梗圖介紹其一其二（六點下班、接近電話）
+貫通全部的是 搜尋功能
+所謂的不存在頁面：放真理醫生
+真的沒有的頁面：偽404
+
+
+-->
