@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="雷電 LINE Bot 官方說明書，介紹冷笑話、天氣查詢與宵夜推薦等功能。">
+    <meta name="keywords" content="html, css, 網頁, JS, javascript">
+    <!-- 套用 bootstrap 框架-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- 引用自己的css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 網頁字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
+    <!-- icon 有效-->
+    <script src="https://kit.fontawesome.com/a467c5dc5e.js" crossorigin="anonymous"></script>
+    <title>「雷電」官方說明書</title>
+</head>
+<body>
+<!-- header 框架開始 -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" alt="logo" width="145"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">主頁</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">關於作者</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="nav-link dropdown-toggle btn btn-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">操作介紹</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">指令介紹</a></li>
+                                    <li><a class="dropdown-item" href="#">笑話功能</a></li>
+                                    <li><a class="dropdown-item" href="#">天氣系統</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!-- header 框架結束 -->
+<!-- 第一 section -->
+    <section id="intro" style="background: linear-gradient(45deg, rgba(0, 0, 0, 0.877), transparent) 20%, url(img/view.jpg) no-repeat center;background-size: cover;">
+        <div class="container">
+            <div class="col-12 col-md-6">
+                <h1 class="display-4 text-light fw-medium">今晚你想點哪一道？</h1>
+                <p class="lead text-light mt-3">可惡，肚子好餓...</p>
+                <a href="#" class="btn rounded-2">了解更多</a>
+            </div>
+        </div>
+    </section>
+<!-- 第一 section 結束 -->
+<!-- 第二 section -->
+    <section id="second">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h3 class="text-center">作者簡介</h3>
+                    <div class="row justify-content-around align-items-center">
+                        <div class="col-md-5 self">
+                            <img src="img/self.png" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/logo.jpg" class="d-block mb-4" alt="logo" width="180">
+                            <p class="lead mb-5">「雷電」代理人自 2026 年創立以來，足跡只在 Line，我是製作人，目的是我們可以有更生活化的方式使用人工智慧，使人工智慧技術輕鬆地融入我們的生活中。</p>
+                            <ul id="list">
+                                <li class="mb-3">「雷電」會講笑話</li>
+                                <li class="my-3">「雷電」可以讀懂天氣</li>
+                                <li class="my-3">「雷電」即將可以推薦你宵夜要吃什麼</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- 第二 section 結束 -->
+<!-- 功能簡介 -->
+    <section id="latest">
+        <div class="container">
+            <div class="row text-center">
+                <h3>功能簡介</h3>
+                <div class="col-md-4 text-left">
+                    <div class="outer">
+                        <div class="upper">
+                            <img src="img/joke.jpg" alt="笑話資料庫">
+                            <div class="innertext">
+                                <span class="text-light fw-semibold">提供笑話</span>
+                            </div>
+                        </div>
+                        <div class="lower">
+                            <h3>笑話服務</h3>
+                            <p><i class="fa-regular fa-file"></i> 冷笑話一百零一則</p>
+                            <p><i class="fa-regular fa-message"></i> 笑死，根本笑不出來。叫阿德菲以後不要看這種垃圾！</p>
+                            <p><i class="fa-solid fa-message"></i> 我覺得樓上的評論更好笑😄</p>
+                            <a href="#" class="btn btn-primary mt-3">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-left">
+                    <div class="outer">
+                        <div class="upper">
+                            <img src="img/weather.PNG" alt="天氣系統">
+                            <div class="innertext">
+                                <span class="text-light fw-semibold">提供天氣訊息</span>
+                            </div>
+                        </div>   
+                        <div class="lower">
+                            <h3>天氣系統</h3>
+                            <p><i class="fa-solid fa-cloud-rain"></i> 天氣系統</p>
+                            <p><i class="fa-regular fa-message"></i> 颱風天出門也帶太多錢😂</p>
+                            <p><i class="fa-solid fa-message"></i> 樓上好沒幽默感😐</p>
+                            <a href="#" class="btn btn-primary mt-3">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-left">
+                    <div class="outer">
+                        <div class="upper">
+                            <img src="img/NightSnack.jpg" alt="宵夜">
+                            <div class="innertext">
+                                <span class="text-light fw-semibold">提供宵夜點子</span>
+                            </div>
+                        </div>   
+                        <div class="lower">
+                            <h3>宵夜吃啥？</h3>
+                            <p><i class="fa-solid fa-burger"></i> 宵夜系統</p>
+                            <p><i class="fa-regular fa-message"></i> 減肥不成功都是你害的😢</p>
+                            <p><i class="fa-solid fa-message" style="color: rgb(120, 40, 232);"></i> 作者回覆：我覺得你應該要思考你減肥失敗的根本原因......</p>
+                            <p class="btn btn-primary mt-3">敬請期待</p><!-- 先頂著用-->
+                            <!-- <a href="#" class="btn btn-primary mt-3">敬請期待</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- footer 開始 -->
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+                <img src="img/logo.png" alt="" width="170">
+                <p>蠢貨眼裡聰明人都是瘋子，這是誇獎。<br>知識既為萬物尺度，定將窮盡真理、根除謬誤！</p>
+                <p>人有悲歡離合，月有陰晴圓缺，此事古難全。<br>但願人長久，千里共嬋娟。</p>
+            </div>
+            <div class="col-md-4">
+               <h4>網站瀏覽</h4>
+              <ul>
+                <li><a href="index.html">回到首頁</a></li>
+                <li><a href="#">關於作者</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>想看更多？</h4>
+                <p>作者 GitHub<br><a href="https://github.com/PhoenixBlueIce">PhoenixBlueIce</a></p>
+            </div>
+          </div>
+        </div>
+    </footer>
+<!-- footer 結束 -->
+<script></script>
+</body>
+</html>
+<!-- 因為 Bootstrap 支援 <a class="btn ..."> 寫法，因此可以直接把 <button> 包在裡面-->

@@ -1,0 +1,185 @@
+/* 品牌變數 */
+:root {
+	/* 品牌色 */
+	--color-main: #E8CB49;
+	--color-dark: #3A3B3B;
+	--color-gray: #707070;
+	--color-bg: #f8f8f8;
+	/* 字型 */
+	--font-body: 'Open Sans', sans-serif;
+	--font-title: 'Noto Sans TC', sans-serif;
+	--font-story: 'LXGW WenKai TC', serif;
+	/* 間距 */
+	--space-section: 80px;
+}
+
+/* 全域基礎設定 */
+body {
+	font-family: var(--font-body);
+	color: var(--color-gray);
+	line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: var(--font-title);
+	color: var(--color-dark);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+/*這一段是「全站骨架」，後續看菜吃飯*/
+
+/* header/navbar 系統 */
+header {
+  padding: 10px 0;
+}
+
+.navbar-brand img {
+  max-height: 145px;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 12px;
+  font-weight: 500;
+}
+
+/* sectopn 通用樣式 */
+section {
+  padding: var(--space-section) 0;
+}
+/*以後不用每個section自己寫padding。*/
+
+/* Intro 區域 */
+#intro {
+  color: white;
+}
+
+#intro h1 {
+  font-weight: 600;
+}
+
+#intro .btn {
+  background: var(--color-main);
+  color: var(--color-dark);
+  padding: 8px 28px;
+  border-radius: 20px;
+}
+
+/* 作者區域（#second） */
+#second h3 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#second .self img {
+  height: 550px;
+  object-fit: cover;
+  object-position: 80%;
+}
+
+#second p,
+#second li {
+  font-family: var(--font-story);
+}
+/* ↓項目符號那邊，以前被坑過 
+「li::before」可以畫假的，除非很想客製造型，否則建議不要用
+*/
+#auther_list {
+  padding-left: 1.2em;
+}
+
+#auther_list li {
+  list-style: disc;
+}
+
+/* 最新涉足地點（#latest） */
+#latest{
+  background: var(--color-bg);
+  padding: var(--space-section) 0; /* 補回整段的上下留白節奏 */
+}
+
+/* 疊字定位 */
+#latest .upper { position: relative; }
+#latest .innertext { position: absolute; bottom: 20px; left: 30px; }
+
+#latest .outer{
+  box-shadow: 0 0 8px rgba(0,0,0,0.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* 視覺是否更像舊版：你可選擇要不要加 */
+  margin: 0 5px;
+  padding: 0;
+}
+
+#latest .lower{
+  padding: 22px;
+}
+
+#latest .lower h3{
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+#latest .lower p{
+  margin-bottom: 4px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#latest a{
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+/* 疊字膠囊：透明度要更像舊版可改 0.3 */
+#latest .innertext span{
+  background: rgba(0,0,0,0.3);
+  padding: 5px 16px;
+  border-radius: 30px;
+}
+
+/* #latest 裡的「了解更多」按鈕：補回金色按鈕樣式（不影響全站 Bootstrap btn） */
+#latest .lower .btn {
+  background: var(--color-main);
+  color: var(--color-dark);
+  padding: 7px 28px;
+  border-radius: 20px;
+  border: none;
+}
+
+#latest .lower .btn:hover {
+  opacity: 0.8;
+  background: var(--color-main);
+}
+
+/* footer 系統 */
+footer {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding: var(--space-section) 0;
+}
+
+footer h4 {
+  margin-bottom: 24px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: var(--color-main);
+}
