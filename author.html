@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="關於作者本人的頁面">
+    <meta name="keywords" content="html, css, 網頁, JS, javascript">
+    <!-- 套用 bootstrap 框架-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- 引用自己的css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 網頁字型 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
+    <title>關於作者</title>
+</head>
+<body>
+<!-- header 框架開始 -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" alt="logo" width="145"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">主頁</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="author.html">關於作者</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="nav-link dropdown-toggle btn btn-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">操作介紹</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="commands.html">指令介紹</a></li>
+                                    <li><a class="dropdown-item" href="jokes.html">笑話功能</a></li>
+                                    <li><a class="dropdown-item" href="weather.html">天氣系統</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!-- header 框架結束 -->
+<!-- 第一框架開始 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <img class="img-fluid rounded shadow" src="img/作者照其一.jpg" alt="第二杯半價（有嗎？）">
+            </div>
+            <div class="col-12 col-md-8">
+                <h5>《陋站銘》序</h5>
+                <p class="text-start">
+                    余觀今之習程式者，或汲汲於框架之新，或惶惶於語言之眾。終日伏案，鍵聲鏗鏘，雖無琴書之雅，實有造化之功。<br>
+                    然世人多視碼農為苦役，殊不知其中亦有樂趣存焉。夫陋室可銘，陋碼亦可銘也。<br>
+                    不揣淺陋，戲作數語，以誌 coding 之甘苦。非敢言志，聊博同儕一笑云爾。</p><!-- 我觀察現在學寫程式的人，有的忙著追新框架，有的焦慮語言太多。整天埋頭寫 code，鍵盤敲得響亮，雖然沒有彈琴讀書那種風雅，但其實也是在創造東西。然而一般人總覺得工程師很辛苦，卻不知道其中也有樂趣。既然破房子都可以寫銘文，那破 code 為什麼不行？我不怕獻醜，寫了幾句，記錄 coding 的酸甜苦辣。不敢說有什麼大志向，只希望讓同行看了會心一笑而已。-->
+                <hr>
+                <h5>《陋站銘》</h5>
+                <p class="text-start">
+                    碼不在多，能跑則行；腦不在強，有肝則贏。斯是陋站，唯吾更新。<br>
+                    專案上線通，日誌一片青；除錯有工具，往來無白工。可以談培森，論模型。<br>
+                    無爆炸之代碼，無健康之煩憂。開放原始碼，自由軟體魂。編譯器云：何錯之有？<!-- 程式碼不用多，程式能跑就行；腦力不用很強，能肝出來才是贏家。這是一個不起眼的小站，只有我本人更新。專案上線的時候跑得通，日誌一片綠燈；除錯的時候有除錯工具，版本更新皆不做白工。可以談 Python、討論 AI 模型。沒有爆炸的程式碼，也沒有健康之煩憂。開源的程式碼、追求自由軟體的靈魂。程式編輯器：「找不到錯誤。」-->
+                </p>
+            </div>
+            <div class="col-12 mt-4">
+                <p class="lead">我習慣以系統化方式拆解問題，先建立可運作的第零版，再逐步重構資料流、錯誤處理與使用者體驗。<br>
+                    「雷電」是我用 Python 製作的 LINE Bot 作品，負責整合文字指令、天氣資料與回覆邏輯；<br>
+                    而這份「官方說明書」則是為了補足作品展示與使用說明，讓功能不只存在於程式碼中，也能被使用者理解與操作。</p>
+            </div>
+        </div>
+    </div>
+<!-- 第一框架結束 -->
+<hr>
+<!-- 第二框架開始 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+            </div>
+            <div class="col-12 col-md-8">
+                <h5>《涼週詞》</h5>
+                <p class="text-start">
+                    珍珠奶茶飲料杯，欲飲手機馬上催。倒臥床鋪君莫笑，古來加班幾人回？
+                </p><!-- 裝著珍珠奶茶的飲料杯，當我正要喝的時候手機馬上就響了。如果看到我倒在床上你可別笑我，自古以來熬夜加班身體非常疲累的時候能好好回訊息的有幾個人？ -->
+                <h5>《將體檢》(片段)</h5>
+                <p class="text-start">
+                    君不見，錯誤之潮天上來，奔流入海不復回。<br>
+                    君不見，體檢報告之紅字，昔如綠碼今成朱。
+                </p><!-- 你沒看到 error 的紀錄一直來，把螢幕畫面刷滿了很難返回嗎？你沒看到體檢報告的紅字，以前是正常的現在都變紅了嗎？ -->
+            </div>
+            <div class="col-12 mt-4">
+                <p class="lead">如果有人問我為什麼要學程式、寫 code，我的答案其實很簡單：因為我本來就對這件事有興趣。<br>
+                我認為寫程式是一件比較有趣的事情，在電腦的世界中，我可以像「造物主」一樣建立規則、設計流程，讓資料與功能依照自己的邏輯運作。<br>
+                現在有了 AI 作為輔助，我覺得現代工程師更應該懂得勞逸結合：該專注時專注，該休息時也要好好休息。<br>
+                休息是為了走更長遠的路，健康是一切的根本。</p>
+            </div>
+        </div>
+    </div>
+<!-- 第二框架結束 -->
+<hr>
+<!-- 第三框架開始 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-7">
+            </div>
+            <div class="col-12 col-md-5">
+                <h5>《將體檢》(片段)</h5>
+                <p class="text-start">
+                    工作放假須盡休，莫使指數乾上升。<br>
+                    天生我材必有用，專案進度莫擔心。<br>
+                    遊山玩水且為樂，環遊世界八十天。
+                </p>
+            </div>
+            <div class="col-12 mt-4">
+                <p class="lead">
+                    我希望自己的作品不只是能執行，也能被理解、被使用、被記住。<br>
+                    「雷電」是我從 Python、API 串接與前端展示開始建立的作品之一，而這份官方說明書則是我嘗試把功能、文件與個人風格整合在一起的成果。<br>
+                    我重視作品的可維護性與可解釋性，也相信該正經的地方就要正經；但生活本來就有壓力，難得能在作品裡保留一點幽默與創意，我認為那也是讓人持續前進的一種方式。<br>
+                </p>
+                <p class="lead">
+                    在技術實作上，「雷電」主要使用 Python 撰寫，結合 LINE Messaging API、Flask、JSON 資料處理與天氣資料解析；<br>
+                    而這份「官方說明書」則使用 HTML、CSS、Bootstrap 與 JavaScript 製作，作為作品展示與使用者操作入口。
+                </p>
+            </div>
+        </div>
+    </div>
+<!-- 第三框架結束 -->
+<!-- footer 開始 -->
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+                <img src="img/logo.jpg" alt="" width="170">
+                <p>There's only one true PhoeniX.</p>
+            </div>
+            <div class="col-md-4">
+               <h4>網站瀏覽</h4>
+              <ul>
+                <li><a href="index.html">回到首頁</a></li>
+                <li><a href="author.html">關於作者</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>想看更多？</h4>
+                <p>作者 GitHub<br><a href="https://github.com/PhoenixBlueIce">PhoenixBlueIce</a></p>
+            </div>
+          </div>
+        </div>
+    </footer>
+<!-- footer 結束 -->
+<script></script>
+</body>
+</html>
