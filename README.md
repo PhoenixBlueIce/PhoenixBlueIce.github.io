@@ -23,7 +23,7 @@
 這個 repo 是說明網站本身，而「雷電」 Bot 主體是 Python 與 LINE Messaging API，詳情可以在[公開版](https://github.com/PhoenixBlueIce/LineBot-Public-version-)看到
 
 # 待填坑清單 / Roadmap
-- [√] 完成指令介紹
+- [x] 完成指令介紹
 - [ ] 完成宵夜推薦
 - [ ] 加入 JS 心理測驗
 - [ ] 補作者照片
