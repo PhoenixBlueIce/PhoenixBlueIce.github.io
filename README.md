@@ -32,4 +32,5 @@
 # 相關連結
 - [官方說明書](https://phoenixblueice.github.io/)
 - [雷電 Public Version repository](https://github.com/PhoenixBlueIce/LineBot-Public-version-)
+- [ASP.NET CORE 卡店專案(公開版)](https://github.com/PhoenixBlueIce/YGOCardShopOfPF--Public-Version-)
 - [GitHub Profile](https://github.com/PhoenixBlueIce)
